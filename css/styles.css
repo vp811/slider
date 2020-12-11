@@ -111,6 +111,73 @@ h2 {
 /*==================================
 
 
+  Slider Styling
+
+
+======================================*/
+
+.slick-slide {
+    position: relative;
+}
+
+.slick-slide:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top, black, transparent, transparent);
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    font-style: italic;
+}
+
+.slick-prev:before {
+    content: '\f0a8';
+    font-family: "FontAwesome";
+    color: #d8b5ff;
+    font-size: 26px;
+}
+
+.slick-next:before {
+    content: '\f0a9';
+    font-family: "FontAwesome";
+    font-size: 26px;
+    color: #d8b5ff;
+}
+
+.slick-prev {
+    left: 20px;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 20px;
+}
+
+.more-information {
+    position: absolute;
+    top: 25%;
+    background: rgb(0 0 0 / 34%);
+    color: white;
+    max-width: 30%;
+    left: 15%;
+    padding: 15px;
+}
+
+.more-information a {
+  color: white;
+}
+
+/*==================================
+
+
   FAQ Styling
 
 
